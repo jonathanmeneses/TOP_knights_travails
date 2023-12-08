@@ -1,0 +1,35 @@
+Approach
+
+Create destination class that has square and predecessor properties
+
+Create the knight class
+
+    Def a function that maps all potential moves for a given square
+
+    Def a function that takes starting square and target_square
+        define hashmap with visited squares
+        Add starting square to queue
+
+        until queue.empty? or hashmap.contains(target_square)
+            square_to_explore = queue.shift
+            
+                generate all potential destinations from queue
+                add all destinations not in visited to queue
+
+                add each destination to hashmap
+        destination = target_square
+        
+        
+        array << destination.coords
+        until destination.predecessor == starting square
+            destination = destination.predecessor
+            array.unshift(desintation.coords)
+        return array with path
+                
+            
+
+
+
+
+
+
